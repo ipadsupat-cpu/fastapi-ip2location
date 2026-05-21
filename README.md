@@ -1,4 +1,5 @@
 # FastAPI IP2Location Middleware
+![PyPI](https://img.shields.io/pypi/v/fastapi-ip2location)
 
 A high-performance, asynchronous FastAPI middleware that automatically geolocates incoming requests using the [IP2Location](https://www.ip2location.com/) database or the [IP2Location.io](https://www.ip2location.io/) API. It seamlessly injects the geolocation data directly into the `request.state.location` object for easy access in your route handlers.
 
