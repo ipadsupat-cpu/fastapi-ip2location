@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapi-ip2location"
+version = "1.0.0"
+description = "A FastAPI middleware SDK for the IP2Location Python library."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "IP2Location", email = "support@ip2location.com" } 
+]
+keywords = ["fastapi", "ip2location", "geolocation", "middleware", "ip"]
+license = { text = "MIT" } 
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: FastAPI",
+    "Intended Audience :: Developers",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware",
+]
+
+dependencies = [
+    "fastapi>=0.68.0",
+    "starlette>=0.14.0",
+    "IP2Location>=8.0.0",
+    "httpx>=0.24.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "python-dotenv>=1.0.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ip2location/fastapi-ip2location"
+"Bug Tracker" = "https://github.com/ip2location/fastapi-ip2location/issues"
+
+[tool.setuptools]
+packages = ["fastapi_ip2location"]
